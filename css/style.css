@@ -24,8 +24,6 @@ body {
   height: calc(100% - 100px);
 } 
 
-
-
 /*----------  Utility classes  ----------*/
 
 .d_flex {
@@ -45,15 +43,20 @@ a {
   margin: 0 !important;
 }
 
-[class*="col-"] {
+*[class*="col-"] {
   padding-right: 8px !important;
-  padding-left: 8px !important;
+  padding-left: 8px !important; 
 } 
+
+.custom_row {
+  width: 90%;
+}
 
 
 .m_10 {
   margin-bottom: 20px !important;
 }
+
 
 /*----------  Color palette  ----------*/
 
@@ -378,7 +381,7 @@ nav a span:hover::after {
   top: 0;
   left: 0;
   width: 100%;
-  height:100%;
+  height: 91%;
   color: white;
   background-color: black;
   opacity: 0;
