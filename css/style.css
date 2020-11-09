@@ -20,19 +20,16 @@ body {
     justify-content: space-between !important;
 }  
 
-/*.site_main{
+.site_main{
   height: calc(100% - 100px);
-} */
+} 
+
 
 
 /*----------  Utility classes  ----------*/
 
 .d_flex {
   display: flex;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
 }
 
 li {
@@ -47,9 +44,6 @@ a {
   padding-right: 10px;
   padding-left: 10px;
 }
-
-
-/*----------  End Utility classes  ----------*/
 
 
 
@@ -69,6 +63,10 @@ a {
 
 .playlist_c {
     color: rgb(163, 163, 163);
+}
+
+.footer_c {
+  background-color: rgb(40, 40, 40);
 }
 
 
@@ -221,7 +219,6 @@ a {
 
 /*----------  Aside bottom section  ----------*/
 
-
 .aside_bottom {
   padding: 20px 20px 0;
 }
@@ -266,7 +263,10 @@ a {
   margin-right: 10px;
 }
 
+/*----------  End of Aside bottom section  ----------*/
+
 /*=====  End of Aside section  ======*/
+
 
 
 /*=============================================
@@ -369,7 +369,7 @@ nav a:hover{
 
 /*----------  John Doe and popular artists section  ----------*/
 
-.created_for h2, .popular_artist h2 {
+.created_for h2, .popular_artists h2 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -381,18 +381,145 @@ nav a:hover{
   font-weight: 500;
 }
 
-.popular_artist img {
+.popular_artists img {
   border-radius: 50%;
 }
 
-.popular_artist .layer {
+.popular_artists .layer {
   border-radius: 48%;
-  height: 100%;
 }
 
 /*---------- End of John Doe and popular artists section  ----------*/
 
 
+/*=====  End of Main section  ======*/
+
+
+/*=============================================
+        =            Footer            =
+=============================================*/
+
+.site_footer {
+  height: 100px;
+}
+.tracker {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*---------- Current song section  ----------*/
+
+.current_song {
+  width: 17%;
+  justify-content: space-between;
+}
+
+.current_song_img {
+  align-items: center;
+}
+
+.current_song_img img {
+  height: 50px;
+  margin: 0 15px;
+}
+
+.icons {
+  align-items: center;
+}
+
+.icons i {
+  font-size: 1rem;
+  margin: 0 6px;
+}
+
+/*---------- End of Current song section  ----------*/
+
+
+/*---------- Player section  ----------*/
+
+
+.player {
+  flex-flow: column;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.player i {
+  font-size: 1.1rem;
+  margin: 0 15px 15px;
+}
+
+.commands {
+  justify-content: center;
+  align-items: center;
+}
+
+.commands>i.far.fa-play-circle {
+  font-size: 2rem;
+}
+
+
+/* Time sub section */
+
+
+.time {
+  flex-flow: row;
+  align-items: center;
+}
+
+.time .cursor {
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.time .cursor_layer {
+  height: 5px;
+  width: 25%;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+/* End of Time sub section */
+
+/*---------- End of Player section  ----------*/
+
+
+/*---------- Other commands section  ----------*/
+
+
+.other_commands {
+  width: 20%;
+  align-items: center;
+}
+
+.other_commands i {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.other_commands .cursor {
+  height: 5px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  margin: 0 20px 0 5px;
+}
+
+.other_commands .cursor_layer {
+  height: 5px;
+  width: 25%;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+/*---------- End of Other commands section  ----------*/
+
+
+/*=====  End of Footer  ======*/
 
 
 
