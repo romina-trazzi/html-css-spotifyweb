@@ -151,9 +151,10 @@ a {
 }
 
 .home li a:hover, .home li img:hover {
-  transform: scale(1) !important;
+  transform: scale(0.9) !important;
   color:  white !important;
 }
+
 
 /* End of Home sub_section */
 
@@ -173,7 +174,6 @@ a {
 .playlist h5, .new_playlist span {
   font-size: 1.6rem; 
   font-weight: 600;
-  margin-bottom: 15px;
   margin-left: 20px;
 }
 
@@ -181,9 +181,10 @@ a {
   margin-left: 10px;
 }
 
-.new_playlist_ a {
+.new_playlist a {
     display: flex;
     align-items: center;
+   
 }
 
 .new_playlist a:hover .fas, .new_playlist a:hover span {
@@ -295,11 +296,29 @@ nav {
 nav a {
   margin: 25px 15px;
   color: rgb(163, 163, 163);
+  position: relative;
 }
 
-nav a:hover{
+nav a:hover {
   transform: scale(1.2);
   color: rgb(163, 163, 163) !important;
+}
+
+nav a span::after {
+  position: absolute;
+  display: table;
+  content: '';
+  clear: both;
+  width: 40px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 3px solid rgb(173, 255, 47);
+  visibility: hidden;
+}
+
+nav a span:hover::after {
+  visibility: visible;
 }
 
 /*----------  End of Navbar section  ----------*/
@@ -372,6 +391,7 @@ nav a:hover{
 .created_for h2, .popular_artists h2 {
   margin-bottom: 0;
   padding-bottom: 0;
+  margin-top: 25px;
 }
 
 .subtitle {
@@ -411,7 +431,7 @@ nav a:hover{
 /*---------- Current song section  ----------*/
 
 .current_song {
-  width: 17%;
+  width: 20%;
   justify-content: space-between;
 }
 
@@ -425,6 +445,7 @@ nav a:hover{
 }
 
 .icons {
+  color: rgb(163, 163, 163);
   align-items: center;
 }
 
@@ -432,6 +453,22 @@ nav a:hover{
   font-size: 1rem;
   margin: 0 6px;
 }
+
+.icons:hover {
+  color: white;
+}
+
+.current_song_img h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.current_song_img p {
+  color: rgb(163, 163, 163);
+  margin: 0;
+  padding: 0;
+}
+
 
 /*---------- End of Current song section  ----------*/
 
