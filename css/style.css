@@ -12,15 +12,16 @@
 body { 
   color: white !important;
   font-family: "GothamPro", "Montserrat", "sans-serif" !important;
+  width: 100% !important;
 }
 
-.container {
-  height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
+.main_box { 
+    height: 100vh !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+} 
 
-/*""#site_content{
+/*.site_main{
   height: calc(100% - 100px);
 } */
 
@@ -89,7 +90,7 @@ a {
     border-radius: 30px !important;
     font-size: 1.2rem !important;
     font-weight: 400 !important;
-    margin: 0 0 30px 0 !important;
+    margin: 0 10px 30px 0 !important;
     padding: 12px 40px !important;    
 }
 
@@ -114,13 +115,11 @@ a {
 =============================================*/
 
 .aside_general {
-  min-width: 300px;
-  /*width: 300px;*/
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 10;
+    width: 40vh;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
 }
-
 
 /*----------  Aside upper section  ----------*/
 
@@ -145,6 +144,10 @@ a {
   margin: 30px 0;
 }
 
+.home span {
+  margin-left: 10px;
+}
+
 .home li a {
   padding-left: 20px;
   height: 45px;
@@ -153,10 +156,6 @@ a {
 .home li a:hover, .home li img:hover {
   transform: scale(1) !important;
   color:  white !important;
-}
-
-.home span {
-  margin-left: 10px;
 }
 
 /* End of Home sub_section */
@@ -227,32 +226,39 @@ a {
 .aside_bottom {
   padding: 20px 20px 0;
 }
+
 .install a {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   color: rgb(163, 163, 163);
 }
+
 .install a:hover {
   color: white;
 }
+
 .install img {
   height: 15px;
   margin-right: 10px;
 }
+
 .username {
   border-top: 1px solid rgb(163, 163, 163);
   padding: 15px 15px 10px 0;
 }
+
 .username a {
   display: flex;
   align-items: center;
 }
+
 .username span {
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: white;
 }
+
 .username img {
   width: 25px;
   height: 25px;
@@ -261,10 +267,40 @@ a {
   margin-right: 10px;
 }
 
-
-
-
 /*=====  End of Aside section  ======*/
+
+
+/*=============================================
+    =            Music section            =
+=============================================*/
+
+.music {
+    width: 100%;
+}
+
+/*----------  Navbar section  ----------*/
+
+nav {
+    justify-content: center !important;
+}
+
+nav a {
+  margin: 25px 15px;
+  color: rgb(163, 163, 163);
+}
+
+nav a:hover{
+  transform: scale(1.2);
+  color: rgb(163, 163, 163) !important;
+}
+
+/*----------  End of Navbar section  ----------*/
+
+
+
+
+
+
 
 
 

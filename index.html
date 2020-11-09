@@ -11,7 +11,7 @@
         <meta name="keywords" content="music, playlist, Spotify">
         <title>My Spotify</title>
         <!-- stylesheet, Bootstrap 3.4 and grids, script resources -->
-        <link rel="stylesheet" href="css/style_2.css" media="print, screen, all">
+        <link rel="stylesheet" href="css/style.css" media="print, screen, all">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="css/12-bool.css">
         <script src="#"></script>
@@ -25,27 +25,27 @@
 
     <body>
 
-        <!-- header -->
-        <header class="site_header header_c d_flex">
+        <div class="main_box d_flex">
 
-            <!-- logo site -->
-            <div class="logo aside_c">
-                <img src="img/logo.svg" alt="logo Spotify">
-            </div>
-            <!-- /logo site -->
+            <!-- header -->
+            <header class="site_header header_c d_flex">
 
-
-            <!-- button upgrade site -->
-            <button type="button" class="btn btn-default btn-lg custom_button header_c text-uppercase">Effettua l'upgrade</button>
-            <!-- /button upgrade site -->
-        </header>
-        <!-- /header -->
+                <!-- logo site -->
+                <div class="logo aside_c">
+                    <img src="img/logo.svg" alt="logo Spotify">
+                </div>
+                <!-- /logo site -->
 
 
-        <!-- flexbox general container -->
-       
-             
-            <main class="site_main main_c">
+                <!-- button upgrade site -->
+                <button type="button" class="btn btn-default btn-lg custom_button header_c text-uppercase">Effettua l'upgrade</button>
+                <!-- /button upgrade site -->
+            </header>
+            <!-- /header -->
+
+            <main class="site_main main_c d_flex">
+
+
                 <aside class="aside_general aside_c d_flex">
 
                     <!-- aside upper bar -->
@@ -87,38 +87,43 @@
                     <!-- /aside bottom baar -->
 
                 </aside>
-
-                
                 <!-- /aside bar -->
-        
-
-            </main> 
-
-
-            <!-- <div class="container d-flex"> -->
-        <!-- </div> -->
-
-
-
-
-
-
-
-
-
-
 
                 <!-- music section -->
                 <section class="music">
 
-                    <!-- navbar bootstrap-->
-                    <nav> </nav>
-                    <!-- / navbar bootstrap -->
+                    <!-- navbar -->
+                    <nav class ="d_flex">
+                        <a href="#"><span>IN EVIDENZA</span></a>
+                        <a href="#"><span>PODCAST</span></a>
+                        <a href="#"><span>CLASSIFICHE</span></a>
+                        <a href="#"><span>GENERI E MOOD</span></a>
+                        <a href="#"><span>NUOVE USCITE</span></a>
+                        <a href="#"><span>SCOPRI</span></a>
+                    </nav>
+                    <!-- / navbar -->
+
+                    
+                
+                
+                
+                
                 </section>
                 <!-- /music section -->
 
-            </main>
-            <!-- /main -->
+
+
+                    
+
+                    
+            
+
+            </main> 
+
+
+            
+        
+
 
 
             <!-- footer -->
