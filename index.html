@@ -26,31 +26,23 @@
 
     <body>
 
+        <!-- flexbox general container -->
         <div class="main_box d_flex">
-
-            <!-- header -->
-            <header class="site_header header_c d_flex">
-
-                <!-- logo site -->
-                <div class="logo aside_c">
-                    <img src="img/logo.svg" alt="logo Spotify">
-                </div>
-                <!-- /logo site -->
-
-
-                <!-- button upgrade site -->
-                <button type="button" class="btn btn-default btn-lg custom_button header_c text-uppercase">Effettua l'upgrade</button>
-                <!-- /button upgrade site -->
-            </header>
-            <!-- /header -->
 
             <!-- main -->
             <main class="site_main main_c d_flex">
 
                 <aside class="aside_general aside_c d_flex">
-
+                
                     <!-- aside upper bar -->
                     <div class="aside_upper">
+
+                        <!-- logo site -->
+                        <div class="logo aside_c">
+                            <img src="img/logo.svg" alt="logo Spotify">
+                        </div>
+                        <!-- /logo site -->
+
                         <div class="home">
                             <ul>
                                 <li><a href="#" class ="playlist_c"><img class="playlist_c" src="img/home.svg" alt="home link"><span>Home</span></a></li>
@@ -58,6 +50,7 @@
                                 <li><a href="#" class="playlist_c"><img class="playlist_c" src="img/libreria.svg" alt="bookshelf link"><span>La tua libreria</span></a></li>
                             </ul>
                         </div>
+
                         <div class="playlist">
                             <h5>PLAYLIST</h5>
                             <div class="new_playlist d_flex">
@@ -93,195 +86,204 @@
                 <!-- music section -->
                 <section class="music main_c">
 
-                    <!-- navbar -->
-                    <nav class ="d_flex">
-                        <a href="#"><span>IN EVIDENZA</span></a>
-                        <a href="#"><span>PODCAST</span></a>
-                        <a href="#"><span>CLASSIFICHE</span></a>
-                        <a href="#"><span>GENERI E MOOD</span></a>
-                        <a href="#"><span>NUOVE USCITE</span></a>
-                        <a href="#"><span>SCOPRI</span></a>
-                    </nav>
-                    <!-- / navbar -->
+                    <!-- button upgrade site -->
+                    <div class ="upgrade top_c d_flex">
+                        <button type="button" class="btn btn-default btn-lg custom_button header_c text-uppercase">Effettua l'upgrade</button>
+                    </div>
+                    <!-- /button upgrade site -->
 
-                    <!-- recently played section -->
-                    <section class="recently_played">
-                        <div class="custom_container d_flex">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2 class="recently_listened">Recently played</h2>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
-                                                </div>
-                                            </div>
-                                            <img src="img/metal_lifting.jpg" alt="">
-                                        </div>
-                                        <h4>Heavy Metal</h4>
-                                        <p>Subtitle</p>
+                    <div class ="container">
+                        <!-- navbar -->
+                        <nav class ="d_flex">
+                            <a href="#"><span>IN EVIDENZA</span></a>
+                            <a href="#"><span>PODCAST</span></a>
+                            <a href="#"><span>CLASSIFICHE</span></a>
+                            <a href="#"><span>GENERI E MOOD</span></a>
+                            <a href="#"><span>NUOVE USCITE</span></a>
+                            <a href="#"><span>SCOPRI</span></a>
+                        </nav>
+                        <!-- / navbar -->
+
+                        <!-- recently played section -->
+                        <section class="recently_played">
+                            <div class="container d_flex">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2 class="recently_listened">Recently played</h2>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/metal_lifting.jpg" alt="">
                                             </div>
-                                            <img src="img/stranger.jpg" alt="">
+                                            <h4>Heavy Metal</h4>
+                                            <p>Subtitle</p>
                                         </div>
-                                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                                        <p>Kyle Dixon & Michael Stein</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/stranger.jpg" alt="">
                                             </div>
-                                            <img src="img/aquietplace.jpeg" alt="">
+                                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                            <p>Kyle Dixon & Michael Stein</p>
                                         </div>
-                                        <h4>A quiet place</h4>
-                                        <p>Subtitle</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/aquietplace.jpeg" alt="">
                                             </div>
-                                            <img src="img/split.jpeg" alt="">
+                                            <h4>A quiet place</h4>
+                                            <p>Subtitle</p>
                                         </div>
-                                        <h4>Split</h4>
-                                        <p>Subtitle</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/split.jpeg" alt="">
                                             </div>
-                                            <img src="img/cure.jpeg" alt="">
+                                            <h4>Split</h4>
+                                            <p>Subtitle</p>
                                         </div>
-                                        <h4>A cure for wellness</h4>
-                                        <p>Subtitle</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/cure.jpeg" alt="">
                                             </div>
-                                            <img src="img/sinister.jpeg" alt="">
+                                            <h4>A cure for wellness</h4>
+                                            <p>Subtitle</p>
                                         </div>
-                                        <h4>Sinister</h4>
-                                        <p>Subtitle</p>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="img/sinister.jpeg" alt="">
+                                            </div>
+                                            <h4>Sinister</h4>
+                                            <p>Subtitle</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                    
-                    </section>
-                    <!-- /recently played section -->
+                        
+                        
+                        </section>
+                        <!-- /recently played section -->
 
-                    <!-- John Doe section -->
-                    <section class="created_for">
-                        <div class="custom_container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2>Creato per John Doe</h2>
-                                    <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
-                                                </div>
-                                            </div>
-                                            <img src="img/radar.jpeg" alt="">
-                                        </div>
-                                        <h4>Release Radar</h4>
+                        <!-- John Doe section -->
+                        <section class="created_for">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2>Creato per John Doe</h2>
+                                        <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/radar.jpeg" alt="">
                                             </div>
-                                            <img src="img/mixdaily.jpeg" alt="">
+                                            <h4>Release Radar</h4>
                                         </div>
-                                        <h4>Daily Mix 1</h4>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="img/mixdaily.jpeg" alt="">
+                                            </div>
+                                            <h4>Daily Mix 1</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <!-- /John Doe section -->
+                        </section>
+                        <!-- /John Doe section -->
 
-                    <!-- popular artists section -->
-                    <section class="popular_artists">
-                        <div class="custom_container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h2>Artisti più popolari</h2>
-                                    <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
-                                                </div>
-                                            </div>
-                                            <img src="img/youg.jpeg" alt="">
-                                        </div>
-                                        <h4>Lana Del Rey</h4>
-                                        <p>Subtitle</p>
+                        <!-- popular artists section -->
+                        <section class="popular_artists">
+                            <div class="container">
+                                <div class="row m_10">
+                                    <div class="col-lg-12">
+                                        <h2>Artisti più popolari</h2>
+                                        <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-2 col-md-3">
-                                    <div class="song">
-                                        <div class="card">
-                                            <div class="layer">
-                                                <div class="play_icon">
-                                                    <i class="plus far fa-play-circle"></i>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
                                                 </div>
+                                                <img src="img/young.jpeg" alt="">
                                             </div>
-                                            <img src="img/einaudi.jpeg" alt="">
+                                            <h4>Lana Del Rey</h4>
+                                            <p>Subtitle</p>
                                         </div>
-                                        <h4>Einaudi</h4>
-                                        <p>Subtitle</p>
                                     </div>
+                                    <div class="col-lg-2 col-md-3 custom_col">
+                                        <div class="song">
+                                            <div class="card">
+                                                <div class="layer">
+                                                    <div class="play_icon">
+                                                        <i class="plus far fa-play-circle"></i>
+                                                    </div>
+                                                </div>
+                                                <img src="img/einaudi.jpeg" alt="">
+                                            </div>
+                                            <h4>Einaudi</h4>
+                                            <p>Subtitle</p>
+                                        </div>
+                                    </div>
+                        
                                 </div>
-                    
                             </div>
-                        </div>
-                    </section>
-                    <!-- /popular artists section-->
+                        </section>
+                        <!-- /popular artists section-->
+                    
+                    </div>
 
                 </section>
                 <!-- /music section -->
@@ -312,7 +314,7 @@
                         <div class="commands d_flex">
                             <i class="fas fa-random"></i>
                             <i class="fas fa-step-backward"></i>
-                            <i class="far fa-play-circle"></i>
+                            <i class="far fa-play-circle" id ="special"></i>
                             <i class="fas fa-step-forward"></i>
                             <i class="fas fa-redo-alt"></i>
                         </div>
@@ -338,13 +340,9 @@
                 
                 
                 </div>
-                </footer>
+            </footer>
 
             <!-- /footer -->
-
-
-
-
 
 
         </div>
