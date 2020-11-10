@@ -3,11 +3,6 @@
     =            CSS SPOTIFY           =
 =============================================*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 
 /*=============================================
@@ -15,7 +10,7 @@
 =============================================*/
 
 
-/*----------  Containers classes  ----------*/
+/*----------  Containers  ----------*/
 
 body { 
   color: white !important;
@@ -29,7 +24,7 @@ body {
 
 .aside_general {
     height: auto !important;
-    width: 350px; 
+    width: 290px !important;
     padding-top: 20px;
     flex-direction: column;
     justify-content: space-between;
@@ -71,7 +66,7 @@ body {
 }
 
 
-/*----------  End of Containers classes  ----------*/
+/*----------  End of Containers  ----------*/
 
 
 /*----------  Utility classes  ----------*/
@@ -493,8 +488,7 @@ nav a span:hover::after {
 /*---------- Current song section  ----------*/
 
 .current_song {
-  width: 23%;
-  justify-content: space-between;
+  width: 25%;
 }
 
 .current_song_img {
@@ -509,6 +503,7 @@ nav a span:hover::after {
 .icons {
   color: rgb(163, 163, 163);
   align-items: center;
+  margin-left: 50px;
 }
 
 .icons i {
@@ -543,7 +538,7 @@ nav a span:hover::after {
 
 .player {
   flex-flow: column;
-  width: 42%;
+  width: 50%;
 }
 
 .player i {

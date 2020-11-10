@@ -4,10 +4,10 @@
 
 
 
-/*----------  Sezione media query per schermi xl ----------*/
+/*----------  Sezione media query per schermi lg ----------*/
 
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) { /* da 1200px in poi */
 
      .first {
         display: block;
@@ -16,6 +16,29 @@
     .second {
         display: none;
     }
+
+    /*S.aside_general {
+        width: 350px;
+    }
+
+    /*.current_song {
+        width: 15%;
+    }
+    
+    .other_commands {
+        width: 40%;
+    }
+
+    .player {
+        width: 45%;
+    } */
+
+
+    .icons {
+        flex-direction: row;S
+    } 
+
+
 }
 
 
@@ -23,6 +46,8 @@
 
 
 @media all and (min-width: 769px) and (max-width: 1200px)  {
+
+    /* tra 769px e 1200px */
     
     .recently_played div.col-lg-2:nth-child(3) {
        height: 0;
@@ -45,11 +70,20 @@
         display: none;
     }
 
+  
+    /*.mini-grey {
+        width: 10%;*/
+        
+    }
+    
+    .icons {
+        flex-direction: row;
+    }
 }
 
 
 
-/*----------  Sezione media query per schermi xs ----------*/
+/*----------  Sezione media query per schermi sm ----------*/
 
 
 @media all and (max-width: 768px) {  /* fino a 768px */
@@ -59,26 +93,13 @@
     }
 
     .first {
-        display: none;
-    }
-
-    .second {
         display: block;
     }
 
-
-    .aside_general {
-        width: 70px;
-    }
-
-
-    .home span, .playlist, .profile span {
+    .second {
         display: none;
     }
 
-    .username {
-        border-top: 0;
-    }
 
     .icons {
         flex-direction: column;
@@ -91,18 +112,57 @@
 }
 
 
+/*----------  End of Sezione media query per schermi sm -------*/
+
+
+
+/*----------  Sezione media query per schermi xs ----------*/
+
+@media all and (max-width: 576px) {   /* fino a 576px */
+
+    .aside_general {
+        width: 70px;
+    }
+
+    .first {
+        display: none;
+    }
+
+
+    .second {
+        display: block;
+    }
+
+
+    .home span, .playlist, .profile span {
+        display: none;
+    }
+
+
+    .username {
+        border-top: 0;
+    }
+
+
+    .other_commands i { 
+        margin: 0 3px;
+        font-size: 1rem;
+    }
+
+
+    .icons {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mini_grey {
+        width: 10%;
+    }
+
+}
+
 /*----------  End of Sezione media query per schermi xs ----------*/
 
-
-@media all and (max-width: 480px) {
-    .other_commands {
-        flex-wrap: wrap;
-    }
-
-    .other_commands .cursor {
-        margin-top: 10px;
-    }
-}
 
 
   
