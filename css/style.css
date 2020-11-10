@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+
+/*=============================================
+      =           GENERAL LAYOUT          =
+=============================================*/
+
+
+/*----------  Containers classes  ----------*/
+
 body { 
   color: white !important;
   font-family: "GothamPro", "Montserrat", "sans-serif" !important;
@@ -21,7 +29,7 @@ body {
 
 .aside_general {
     height: auto !important;
-    width: 270px; 
+    width: 350px; 
     padding-top: 20px;
     flex-direction: column;
     justify-content: space-between;
@@ -49,11 +57,22 @@ body {
     padding: 0;
 }
 
-
 .recently_played, .created_for, .popular_artists {
   justify-content: space-between;
   margin: 0 20px !important ;
 }
+
+.site_footer {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*----------  End of Containers classes  ----------*/
+
 
 /*----------  Utility classes  ----------*/
 
@@ -72,6 +91,9 @@ a {
 .m_10 {
   margin-bottom: 20px !important;
 }
+
+
+/*---------- End of Utility classes  ----------*/
 
 
 /*----------  Color palette  ----------*/
@@ -97,6 +119,12 @@ a {
 }
 
 
+/*----------  End of Color palette  ----------*/
+
+
+/*=====  End of General layout block  ======*/
+
+
 /*=============================================
     =            Aside section            =
 =============================================*/
@@ -118,6 +146,8 @@ a {
 .invisible {
   display: none;
 }
+
+
 /*----------  End of Logo section  ----------*/
 
 
@@ -168,7 +198,6 @@ a {
 
 
 /* End of Home sub_section */
-
 
 
 /* Playlist sub_section */
@@ -229,7 +258,6 @@ a {
 /*----------  End of Aside upper section  ----------*/
 
 
-
 /*----------  Aside bottom section  ----------*/
 
 .aside_bottom {
@@ -278,15 +306,13 @@ a {
 
 /*----------  End of Aside bottom section  ----------*/
 
-/*=====  End of Aside section  ======*/
 
+/*=====  End of Aside section  ======*/
 
 
 /*=============================================
     =            Music section            =
 =============================================*/
-
-
 
 .music h2 {
   font-size: 2.6rem;
@@ -313,6 +339,7 @@ a {
     margin: 0 10px 30px 0 !important;
     padding: 12px 40px !important;    
 }
+
 
 /*----------  End of Button upgrade section  ----------*/
 
@@ -350,6 +377,7 @@ nav a span::after {
 nav a span:hover::after {
   visibility: visible;
 }
+
 
 /*----------  End of Navbar section  ----------*/
 
@@ -421,7 +449,6 @@ nav a span:hover::after {
 /*---------- End of Recently played section  ----------*/
 
 
-
 /*----------  John Doe and popular artists section  ----------*/
 
 .created_for h2, .popular_artists h2 {
@@ -433,7 +460,7 @@ nav a span:hover::after {
 .subtitle {
   margin: 10px 0 30px 0;
   color: rgb(163, 163, 163);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -445,6 +472,7 @@ nav a span:hover::after {
   border-radius: 48%;
 }
 
+
 /*---------- End of John Doe and popular artists section  ----------*/
 
 
@@ -454,14 +482,6 @@ nav a span:hover::after {
 /*=============================================
         =            Footer            =
 =============================================*/
-
-.site_footer {
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
 
 .tracker {
   height: 100%;
@@ -473,7 +493,7 @@ nav a span:hover::after {
 /*---------- Current song section  ----------*/
 
 .current_song {
-  width: 16%;
+  width: 23%;
   justify-content: space-between;
 }
 
@@ -492,7 +512,7 @@ nav a span:hover::after {
 }
 
 .icons i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 6px;
 }
 
@@ -503,12 +523,12 @@ nav a span:hover::after {
 .current_song_img h4 {
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .current_song_img p {
   color: rgb(163, 163, 163);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -523,8 +543,7 @@ nav a span:hover::after {
 
 .player {
   flex-flow: column;
-  width: 33%;
-  justify-content: space-evenly;
+  width: 42%;
 }
 
 .player i {
@@ -533,7 +552,7 @@ nav a span:hover::after {
 }
 
 #special {
-  font-size: 3.3rem;
+  font-size: 3rem;
   margin: 0 15px 15px;
 }
 
@@ -561,7 +580,7 @@ nav a span:hover::after {
 
 
 .time .cursor {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: gray;
   border-radius: 10px;
@@ -569,7 +588,7 @@ nav a span:hover::after {
 }
 
 .time .cursor_layer {
-  height: 5px;
+  height: 3px;
   width: 25%;
   background-color: lightgray;
   border-radius: 10px;
@@ -584,10 +603,10 @@ nav a span:hover::after {
 
 
 .other_commands {
-  width: 18%;
+  width: 25%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .other_commands i {
@@ -596,7 +615,7 @@ nav a span:hover::after {
 }
 
 .other_commands .cursor {
-  height: 5px;
+  height: 3px;
   width: 40%;
   background-color: gray;
   border-radius: 10px;
@@ -604,7 +623,7 @@ nav a span:hover::after {
 }
 
 .other_commands .cursor_layer {
-  height: 5px;
+  height: 3px;
   width: 25%;
   background-color: lightgray;
   border-radius: 10px;

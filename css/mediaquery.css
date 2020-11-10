@@ -30,7 +30,7 @@
 
     .recently_played div.col-lg-2:nth-child(6) > div:nth-child(1),
     .recently_played div.col-lg-2:nth-child(7) > div:nth-child(1) {
-        margin-top: 95px;
+        margin-top: 100px;
     }
 
     nav {
@@ -45,18 +45,6 @@
         display: none;
     }
 
-    .player {
-        width: 33%;
-    }
-
-    .current_song {
-        width: 16%;
-    }
-
-    .other_commands {
-        width: 27%;
-    }
-    
 }
 
 /*----------  Sezione media query per schermi xs ----------*/
@@ -93,18 +81,6 @@
     .icons {
         flex-direction: column;
         justify-content: center;
-    }
-
-    .player {
-        width: 33%;
-    }
-
-    .current_song {
-        width: 18%;
-    }
-
-    .other_commands {
-        width: 35%;
     }
 
 }
