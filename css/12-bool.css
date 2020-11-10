@@ -147,7 +147,7 @@
 
 /* media query col small */
 
-/*@media all and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
   .col-xs-1 {
     width: calc((100% / 12) *1);
@@ -197,14 +197,14 @@
     width: calc((100% / 12) *12);
   }
 
-/*}
+}
 
 /* end media query col small */
 
 
 /* media query offset small */
 
-/*@media all and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
   .col-offset-xs-1 {
     margin-left: calc((100% / 12) *1);
@@ -259,7 +259,7 @@
 
 /* media query col medium */
 
-/*@media all and (min-width: 769px) and (max-width: 1200px) {
+@media all and (min-width: 769px) and (max-width: 1200px) {
 
   .col-md-1 {
     width: calc((100% / 12) *1);
@@ -316,7 +316,7 @@
 
 /* media query offset medium */
 
-/*@media all and (min-width: 769px) and (max-width: 1200px) {
+@media all and (min-width: 769px) and (max-width: 1200px) {
 
   .col-offset-md-1 {
     margin-left: calc((100% / 12) *1);
