@@ -4,54 +4,112 @@
 
 
 
+/*----------  Sezione media query per schermi xl ----------*/
+
+
+@media all and (min-width: 1200px) {
+
+     .first {
+        display: block;
+    }
+
+    .second {
+        display: none;
+    }
+}
+
+
 /*----------  Sezione media query per schermi md ----------*/
 
 
 @media all and (min-width: 769px) and (max-width: 1200px)  {
+    
     .recently_played div.col-lg-2:nth-child(3) {
        height: 0;
     }
 
     .recently_played div.col-lg-2:nth-child(6) > div:nth-child(1),
     .recently_played div.col-lg-2:nth-child(7) > div:nth-child(1) {
-        margin-top: 75px;
+        margin-top: 95px;
     }
 
-    body {
-        overflow-y: scroll;
+    nav {
+        flex-wrap: wrap;
     }
 
+    .first {
+        display: block;
+    }
+
+    .second {
+        display: none;
+    }
+
+    .player {
+        width: 33%;
+    }
+
+    .current_song {
+        width: 16%;
+    }
+
+    .other_commands {
+        width: 27%;
+    }
+    
 }
-
-
 
 /*----------  Sezione media query per schermi xs ----------*/
 
 
 @media all and (max-width: 768px) {
     
-    body {
-        overflow-y: scroll;
-    }
-    
     nav {
         flex-wrap: wrap;
     }
 
+    .first {
+        display: none;
+    }
+
+    .second {
+        display: block;
+    }
+
+
     .aside_general {
         width: 70px;
-
     }
+
+
+    .home span, .playlist, .profile span {
+        display: none;
+    }
+
+    .username {
+        border-top: 0;
+    }
+
+    .icons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .player {
+        width: 33%;
+    }
+
+    .current_song {
+        width: 18%;
+    }
+
+    .other_commands {
+        width: 35%;
+    }
+
 }
 
 
 
 
-/*
-
-•	480 px (schermi piccoli, cellulari)
-•	768 px (schermi medi, tablet) - xs - 
-•   tra 769px e 1200px (schermi medi e medio-grandi tv, laptop) - md -
-•	1200px + (schermi grandi, tv) - lg -
-
-/*
+  

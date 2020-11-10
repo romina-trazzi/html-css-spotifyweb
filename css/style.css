@@ -28,7 +28,7 @@ body {
 }
 
 .site_main, .aside_general {
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
 } 
 
 .custom_container {
@@ -42,9 +42,13 @@ body {
   padding-left: 8px !important; 
 } 
 
-.wrapped {
-  justify-content: space-around;
+.music {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
 }
+
 
 .recently_played, .created_for, .popular_artists {
   justify-content: space-between;
@@ -56,10 +60,6 @@ body {
 .d_flex {
   display: flex;
 }
-
-.wrappy {
-  flex-wrap: wrap;
-} 
 
 li {
   list-style: none;
@@ -115,11 +115,17 @@ a {
     background-color: rgb(0, 0, 0) !important;
 }
 
-
+.invisible {
+  display: none;
+}
 /*----------  End of Logo section  ----------*/
 
 
 /*----------  Aside upper section  ----------*/
+
+.aside_upper {
+  overflow-y: scroll;
+}
 
 .aside_upper a, .aside_bottom a {
   width: fit-content;
@@ -280,12 +286,7 @@ a {
     =            Music section            =
 =============================================*/
 
-.music {
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
-}
+
 
 .music h2 {
   font-size: 2.6rem;
@@ -359,6 +360,7 @@ nav a span:hover::after {
 .song img {
   width: 100%;
   margin-bottom: 15px;
+  display: block;
 }
 
 .song h4 {
@@ -397,7 +399,7 @@ nav a span:hover::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 95%;
+  height: 100%;
   color: white;
   background-color: black;
   display: none;
@@ -465,6 +467,7 @@ nav a span:hover::after {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /*---------- Current song section  ----------*/
@@ -520,8 +523,8 @@ nav a span:hover::after {
 
 .player {
   flex-flow: column;
-  width: 40%;
-  justify-content: space-around;
+  width: 33%;
+  justify-content: space-evenly;
 }
 
 .player i {
@@ -581,9 +584,10 @@ nav a span:hover::after {
 
 
 .other_commands {
-  width: 15%;
+  width: 18%;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .other_commands i {
