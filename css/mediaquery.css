@@ -47,10 +47,12 @@
 
 }
 
+
+
 /*----------  Sezione media query per schermi xs ----------*/
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 768px) {  /* fino a 768px */
     
     nav {
         flex-wrap: wrap;
@@ -80,12 +82,27 @@
 
     .icons {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
+    .mini_grey {
+        width: 10%;
+    }
 }
 
 
+/*----------  End of Sezione media query per schermi xs ----------*/
+
+
+@media all and (max-width: 480px) {
+    .other_commands {
+        flex-wrap: wrap;
+    }
+
+    .other_commands .cursor {
+        margin-top: 10px;
+    }
+}
 
 
   
