@@ -10,11 +10,10 @@
         <meta name="description" content=" A website similar to Spotify">
         <meta name="keywords" content="music, playlist, Spotify">
         <title>My Spotify</title>
-        <!-- stylesheet, Bootstrap 3.4 and grids, script resources -->
+        <!-- stylesheet, Bootstrap 3.4 and grids -->
         <link rel="stylesheet" href="css/style.css" media="print, screen, all">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="css/12-bool.css">
-        <script src="#"></script>
         <!-- Fontawesome, GoogleFonts, GothamPro, Montserrat -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
@@ -53,7 +52,7 @@
                         </div>
 
                         <div class="playlist">
-                            <h5>PLAYLIST</h5>
+                            <h5 id ="list">PLAYLIST</h5>
                             <div class="new_playlist d_flex">
                                 <a href="#" class ="playlist_c"> <i class="fas fa-plus-square playlist_c"></i> <span class="playlist_c">Crea Playlist</span>
                                 </a>
@@ -69,6 +68,7 @@
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
                     <!-- /aside upper bar -->
 
@@ -343,9 +343,17 @@
 
             <!-- /footer -->
 
-
         </div>
         <!-- /flexbox general container -->
+
+
+        <!-- my first Javascript lines -->
+        <script>
+            document.getElementById("list").innerHTML ="TRACKLIST"
+        </script>
+        <!-- / my first Javascript lines -->
+
+
 
 
 
